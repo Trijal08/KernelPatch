@@ -1,4 +1,8 @@
 ifndef TARGET_COMPILE
+    TARGET_COMPILE := $(CROSS_COMPILE)
+endif
+
+ifndef TARGET_COMPILE
     $(error TARGET_COMPILE not set)
 endif
 
